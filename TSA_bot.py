@@ -2,12 +2,12 @@ import telebot
 from telebot import types
 import itertools
 import json
-from prettytable import PrettyTable
+import os
 
 # https://t.me/kafe_demo_test_super_bot
-bot = telebot.TeleBot('5484593859:AAHu8GsdsvogFXw7-b6GaQOqIr-hy_uGqug')
+bot = telebot.TeleBot(token=os.getenv('TOKEN'))
 # Ниже напиши свой ID группу в телеграмме
-GROUP_ID = '428955934'
+GROUP_ID = 428955934
 
 
 def get_all_buttons():
@@ -30,52 +30,105 @@ def get_keyboard(keyboard_type):
     for chunk in chunked:
         chunked_btn = []
         for button in list(filter(lambda el: el is not None, chunk)):
-            chunked_btn.append(
-                types.InlineKeyboardButton(button['name'],
-                                           callback_data=button['id'])
-            )
+            if button['name'] == 'Сайт':
+                chunked_btn.append(
+                    types.InlineKeyboardButton(button['name'],
+                                               callback_data=button['id'], url=button['link'])
+                )
+            else:
+                chunked_btn.append(
+                    types.InlineKeyboardButton(button['name'],
+                                               callback_data=button['id'])
+                )
         if len(chunked_btn) == 1:
             keyboard.row(chunked_btn[0])
         elif len(chunked_btn) == 2:
             keyboard.row(chunked_btn[0], chunked_btn[1])
-        elif len(chunked_btn) == 3:
-            keyboard.row(chunked_btn[0], chunked_btn[1], chunked_btn[2])
     return keyboard
 
 
 def generate_message(button):
     msg = ''
-    msg += button['to_print'] + button['link']
+    msg += button['to_print']
     return msg
 
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    bot.send_message(message.chat.id,
-                     'Здравствуйте, %s!\n\nООО «Топливный сервис авто»\n\nНаш сайт:\n\nhttps://tsauto.by/' % message.from_user.full_name,
-                     reply_markup=get_keyboard('main')
-                     )
+    bot.send_photo(message.chat.id,
+                   'https://avatars.mds.yandex.net/get-altay/2752367/2a000001719c1fa9a14d22828ab54486364c/XXXL',
+                   caption='Здравствуйте, %s!\n\nООО «Топливный сервис авто»'
+                           % message.from_user.full_name, reply_markup=get_keyboard('main')
+                   )
 
 
 @bot.message_handler(content_types=['text'])
 def direct_message(msg):
     to_send_message = '<b>Новое сообщени от клиента</b>\n'
     to_send_message += '   Имя клиента: <b>%s</b>\n' % str(msg.from_user.full_name)
-    to_send_message += '   Имя ID клиента: https://t.me/<b>%s</b>\n' % str(msg.from_user.username)
-    to_send_message += '   Сообщение: <b>%s</b>\n' % str(msg.text)
-    bot.send_message(GROUP_ID, to_send_message, parse_mode='html')
+    to_send_message += '   Имя ID клиента: ' + str(msg.from_user.id)
+    to_send_message += '\n   Сообщение: <b>%s</b>\n' % str(msg.text)
+    markup = telebot.types.InlineKeyboardMarkup()
+    url_client = telebot.types.InlineKeyboardButton(text='Ссылка на клиента',
+                                                    url='https://t.me/' + str(msg.from_user.username))
+    markup.add(url_client)
+    bot.send_message(GROUP_ID, to_send_message, parse_mode='html', reply_markup=markup)
 
 
 @bot.callback_query_handler(func=lambda call: True)
 def keyboard_answer(call):
     button = list(filter(lambda btn: call.data == btn['id'], get_all_buttons()))[0]
-    bot.send_message(
-        chat_id=call.message.chat.id,
-        text=generate_message(button),
-        reply_markup=get_keyboard(button['next_keyboard']),
-        parse_mode='html'
-    )
+    keyboard = types.InlineKeyboardMarkup()
+    but = types.InlineKeyboardButton('Сайт', callback_data=button['id'], url=button['link'])
+    keyboard.add(but)
+    if button['link'] != "":
+        if 'photo' in button:
+            bot.send_photo(
+                chat_id=call.message.chat.id,
+                photo=button['photo'],
+                caption=generate_message(button),
+                reply_markup=keyboard,
+                parse_mode='html'
+            )
+            bot.send_message(
+                chat_id=call.message.chat.id,
+                text='Дальше',
+                reply_markup=get_keyboard(button['next_keyboard']),
+                parse_mode='html'
+            )
+        else:
+            bot.send_message(
+                chat_id=call.message.chat.id,
+                text=generate_message(button),
+                reply_markup=keyboard,
+                parse_mode='html'
+            )
+            bot.send_message(
+                chat_id=call.message.chat.id,
+                text='Дальше',
+                reply_markup=get_keyboard(button['next_keyboard']),
+                parse_mode='html'
+            )
+    elif button['link'] == "":
+        if 'photo' in button:
+            bot.send_photo(
+                chat_id=call.message.chat.id,
+                photo=button['photo'],
+                caption=generate_message(button),
+                reply_markup=get_keyboard(button['next_keyboard']),
+                parse_mode='html'
+            )
+        else:
+            bot.send_message(
+                chat_id=call.message.chat.id,
+                text=generate_message(button),
+                reply_markup=get_keyboard(button['next_keyboard']),
+                parse_mode='html'
+            )
 
-if __name__=='__main__':
+
+
+
+if __name__ == '__main__':
     bot.skip_pending = True
-    bot.polling()
+    bot.polling(none_stop=True, interval=0)
