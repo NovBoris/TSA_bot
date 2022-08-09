@@ -38,9 +38,11 @@
         "id": "5",
         "name": "Расположение",
         "position": 4,
-        "to_print": "Мы находимя тут. https://yandex.by/maps/org/toplivny_servis_avto/1099721005/?ll=27.587786%2C53.811155&z=13",
+        "to_print": "Минск, ул. Бабушкина, 19",
+        "photo": "https://www.google.com/maps/vt/data=zADcSWkbvwBL3oWkCtA_GZCCPERRkjVnTnZrJXUeXYzPDUDho2wQ7GDA7dB6lPl_CLjXknYfP4G-1A--zCzbuKrYmRKGnoOP6EH62yaAW_b5EXMYUtywhLOYDsh_LLgfH6qVlTx_3umf7iwxfA6oUeeLP54wb3A89oDlZiiwDxefDz92aRDou6NrNF8wlvrgTGdIpx7V9QEiOuPoqS78ixxixHhwusBS4QzyLRhxx-zCCLaoBEdVi30pM42ZiLIvWN5_ROZH0O6OU6qW1lh9IUoTdQFQIMAIv--C",
         "next_keyboard": "main",
-        "link": "https://yandex.by/maps/org/toplivny_servis_avto/1099721005/?ll=27.587786%2C53.811155&z=13"
+        "link": "https://yandex.by/maps/org/toplivny_servis_avto/1099721005/?ll=27.590873%2C53.809252&z=15.8",
+        "link_name": "На карте"
       },
       {
         "id": "6",
@@ -54,7 +56,7 @@
         "id": "7",
         "name": "Написать нам",
         "position": 6,
-        "to_print": "Напишите свое сообщение, вам ответят в ближайшее время.\nМожете оставить свой телефон, вам перезвонят.\n\nМожете оставить заявку на нашем сайте: ",
+        "to_print": "Напишите свое сообщение, вам ответят в ближайшее время.\nМожете оставить свой номер телефона, вам перезвонят.\n\nМожете оставить заявку на нашем сайте: ",
         "next_keyboard": "Home",
         "link": ""
       },
@@ -75,69 +77,77 @@
         "id": "9",
         "name": "Bosch",
         "position": "0",
-        "to_print": "ПРОВЕРКА ФОРСУНОК МЕХ. КОМПЛЕКТ\n\nПРОВЕРКА ТНВД РЯДНЫЕ BOSCH\n\nПРОВЕРКА ФОРСУНОК COMMON RAIL\n\nПРОВЕРКА COMMON RAIL PIEZO\n\nПРОВЕРКА ТНВД COMMON RAIL CP1 CP2 CP3 CP4\n\nПРОВЕРКА ТНВД VE, VR BOSCH, ZEXEL\n\nПРОВЕРКА НАСОС-ФОРСУНОК\n\nПРОВЕРКА ГРУЗОВЫХ НАСОС-ФОРСУНОК SCANIA, VOLVO, IVECO И ДР.\n\nПРОВЕРКА НАСОСНЫХ-СЕКЦИЙ MERCEDES, RENAULT, DAF И ДР.\n\nЦены на все услуги и возможность оставить заявку: ",
-        "next_keyboard": "Fuel_section_services",
-        "link": "https://tsauto.by/uslugi-toplivnogo-uchastka/bosch/"
+        "to_print": "Топливная аппаратура\n\nКомпания BOSCH является крупнейшим производителем компонентов топливной аппаратуры дизельных двигателей. На нашем СТО Вы можете приобрести и установить на свой автомобиль любую деталь из выпускаемых компанией BOSCH.\n\nДизельная топливная аппаратура: запчасти топливной системы BOSCH, насос-форсунка, ремкомплект ТНВД, форсунка в сборе, электромагнитный клапан, датчик давления, насос электрический, регулятор давления топлива, распылитель форсунки, топливный насос высокого давлени (ТНВД), ремкомплект форсунки, клапан рециркуляции ОГ, датчик давления, нагнетательный клапан, комплект клапана форсунки.\n\nСтанция \"Топливный сервис авто\" обеспечивает гарантией все детали BOSCH, Delfi, Denso, Siemens , приобретенные на нашем СТО и установленные штатными специалистами.",
+        "next_keyboard": "Bosch_prise",
+        "photo": "https://static.azbukasantehniki.ru/iblock/d97/d977efc0de5822e5db9b6b6f4a614393.jpg",
+        "link": ""
       },
       {
         "id": "10",
         "name": "Denso",
         "position": "1",
-        "to_print": "ПРОВЕРКА ФОРСУНОК DENSO\n\nПРОВЕРКА И РЕМОНТ DENSO VE,VR\n\nПРОВЕРКА И РЕМОНТ DENSO РЯДНЫЙ\n\nЦены на все услуги и возможность оставить заявку: ",
-        "next_keyboard": "Fuel_section_services",
-        "link": "https://tsauto.by/uslugi-toplivnogo-uchastka/denso/"
+        "to_print": "Компоненты дизельной системы от компании DENSO\n\nВ партнерстве с рядом автопроизводителей компания DENSO инвестировала значительные средства в разработку своих компонентов дизельной системы, создавая уникальный ассортимент, который соответствует качеству оригинального оборудования и является одним из передовых в области технологий дизельных двигателей. Благодаря производительности продукции, усилиям в области НИОКР и ассортименту, учитывающему потребности производителей, компоненты дизельной системы от компании DENSO — включая дизельные топливные форсунки, дизельные насосы и всасывающие регулирующие клапаны (SCV) — завоевали репутацию эффективного и надежного оборудования.",
+        "next_keyboard": "Denso_prise",
+        "photo": "https://www.aftermarketnews.com/wp-content/uploads/2015/04/Denso-Logo.png",
+        "link": ""
       },
       {
         "id": "11",
         "name": "Delphi",
         "position": "2",
-        "to_print": "ПРОВЕРКА ФОРСУНОК DELPHI\n\nЦены на все услуги и возможность оставить заявку: ",
-        "next_keyboard": "Fuel_section_services",
-        "link": "https://tsauto.by/uslugi-toplivnogo-uchastka/delphi/"
+        "to_print": "Топливные системы Delphi\n\nКомпания Lucas, которая принадлежит американской корпорации Delphi Diesel - один из лидеров в мировой разработке и производстве дизельных систем впрыске. Объемы производства и комплектации топливными системами легковых авто и коммерческой техники компании «Делфи» сопоставимы, а то и превышают аналогичные показатели таких гигантов в сфере дизельной аппаратуры как Bosch и Siemens.\n\nТопливные системы «Делфи» очень распространены. На протяжении 2000-10-х гг. они вовсю ставились на моторы французских автогигантов. А также на отдельные модели немецких, японских и американских марок.",
+        "next_keyboard": "Delphi_prise",
+        "photo": "https://smturbo.by/uploads/images/catalog/5be58cee64d72.jpg",
+        "link": ""
       },
       {
         "id": "12",
         "name": "Siemens",
         "position": "3",
-        "to_print": "ПРОВЕРКА ФОРСУНОК SIEMENS\n\nЦены на все услуги и возможность оставить заявку: ",
-        "next_keyboard": "Fuel_section_services",
-        "link": "https://tsauto.by/uslugi-toplivnogo-uchastka/siemens/"
+        "to_print": "Топливная система Siemens\n\nТопливная система Siemens включает в себя насос высокого давления, клапан контроля потока, пьезо-форсунки, датчик давления, ТНВД, рампу и клапан потока давления. В зависимости от модели топливная система имеет разное максимальное впрысковое давление. Оно может доходить до 1500 бар и больше. Более современные системы Siemens имеют интеркулер, и повышенное впрысковое давление.",
+        "next_keyboard": "Siemens_prise",
+        "photo": "https://brandwiki.ru/up/brands/product/190524_6888.jpg",
+        "link": ""
       },
       {
         "id": "13",
         "name": "Scania HPI»",
         "position": "4",
-        "to_print": "ДИАГНОСТИКА ГРУЗОВОГО АВТОМОБИЛЯ SCANIA\n\nЦены на все услуги и возможность оставить заявку: ",
-        "next_keyboard": "Fuel_section_services",
-        "link": "https://tsauto.by/uslugi-toplivnogo-uchastka/scania-hpi/"
+        "to_print": "Насос-форсунки\n\nНасос-форсунки SCANIA HPI крайне надежны и долговечны, просты в ремонте и практически никогда не требуют замены внутренних частей, но со временем, форсунки могут работать хуже. При ремонте форсунки, мы полностью разбираем её, проводим ультразвуковую чистку и меняем поврежденные части. Все необходимые запчасти и ремкомплекты всегда есть в наличии.",
+        "next_keyboard": "Scania_prise",
+        "photo": "https://models.rsbis.com/storage/makets/preview/resize_600x600/24/0c/240c251454b80efb0c59c3be3901d741.jpeg",
+        "link": ""
       },
       {
         "id": "14",
         "name": "Zexel”",
         "position": "5",
-        "to_print": "ПРОВЕРКА И РЕМОНТ ZEXEL VE ,VR\n\nПРОВЕРКА И РЕМОНТ ZEXEL РЯДНЫЙ\n\nЦены на все услуги и возможность оставить заявку: ",
-        "next_keyboard": "Fuel_section_services",
-        "link": "https://tsauto.by/uslugi-toplivnogo-uchastka/zexel/"
+        "to_print": "Распределительные ТНВД ZEXEL\n\nПлунжерные насосы высокого давления, производимые этой компанией, входят в состав топливной аппаратуры большинства японских дизельных двигателей, что говорит об их исключительно высоком качестве. Впрочем, последнее неудивительно – фирма фактически является структурным подразделением Bosch NIPPONDENSO, что позволяет организовать выпуск японской продукции с немецкой основательностью.",
+        "next_keyboard": "Zexel_prise",
+        "photo": "https://texbaza.by/img/brands/zexel.png?ver=157100760818",
+        "link": ""
       },
       {
         "id": "15",
         "name": "АЗПИ",
         "position": "6",
-        "to_print": "ПРОВЕРКА COMMON RAIL АЗПИ\n(ДВИГАТЕЛЬ ЯМЗ — 6565, 6585)\n\nЦены на все услуги и возможность оставить заявку: ",
-        "next_keyboard": "Fuel_section_services",
-        "link": "https://tsauto.by/uslugi-toplivnogo-uchastka/azpi/"
+        "to_print": "Алтайский завод прецизионных изделий\n\nАлтайский завод прецизионных изделий – российский лидер в производстве топливной аппаратуры для дизельных двигателей всех типов, выполняющих самые современные международные экологические требования. \n\nАЗПИ организован в 1991 году на базе цеха топливной аппаратуры ЦТА Алтайского моторного завода.\nОдно из основных направлений деятельности Алтайского завода прецизионных изделий – электроуправляемая топливная аппаратура. Полнокомплектные топливоподающие системы типа Common Rail для двигателей экологических классов EURO-4 и EURO-5, инжекторы и запасные части к ним.",
+        "next_keyboard": "АЗПИ_prise",
+        "photo": "https://spa22.ru/wp-content/uploads/2021/01/azpi.png",
+        "link": ""
       },
       {
         "id": "16",
-        "name": "ЯМХ, КАМАЗ, MOTORPAL",
+        "name": "ЯМЗ, КАМАЗ, MOTORPAL",
         "position": "7",
-        "to_print": "ПРОВЕРКА ФОРСУНОК ЯМЗ, КАМАЗ, АЗПИ, МАЗ, MOTORPAL И ДР.\n\nПРОВЕРКА ТНВД ЕВРО-2\n\nПРОВЕРКА ТНВД ЕВРО-3\n\nПРОВЕРКА ТНВД КАМАЗ\n\nПРОВЕРКА ТНВД MOTORPAL\n\nПРОВЕРКА ТНВД ЯЗДА 4-КА\n\nЦены на все услуги и возможность оставить заявку: ",
-        "next_keyboard": "Fuel_section_services",
-        "link": "https://tsauto.by/uslugi-toplivnogo-uchastka/jamz-azpi-kamaz-motorpal/"
+        "to_print": "ЯМЗ\n\nСегодня «ЯМЗ» – одно из крупнейших российских предприятий по производству дизельных двигателей многоцелевого назначения, сцеплений, коробок передач, запасных частей к ним, а также стационарных агрегатов на их базе.\n\nКАМАЗ\n\nПАО «КАМАЗ» — советская, затем российская компания, производитель дизельных грузовых автомобилей и дизельных двигателей, действующий с 1976 года. Также выпускает автобусы, электробусы, водоробусы, тракторы, комбайны, электроагрегаты, тепловые мини-электростанции и комплектующие.\n\nMOTORPAL\n\nMOTORPAL, a.s. входит в число крупнейших мировых производителей топливных систем для дизельных двигателей. Motorpal a.s. — это исконно чешская, основанная в 1946 году и динамично развивающаяся сегодня компания.",
+        "next_keyboard": "ЯМХ_КАМАЗ_MOTORPAL_prise",
+        "photo": "https://ymzdiesel.ru/images/ymz_diler_off.jpg?v1.0",
+        "link": ""
       },
       {
         "id": "17",
-        "name": "Домой",
+        "name": "Назад",
         "position": "8",
         "to_print": "ООО «Топливный сервис авто»\n\n",
         "photo": "https://avatars.mds.yandex.net/get-altay/2752367/2a000001719c1fa9a14d22828ab54486364c/XXXL",
@@ -153,7 +163,7 @@
         "id": "18",
         "name": "Диагностика легковых и грузовых автомобилей",
         "position": "0",
-        "to_print": "Диагностика Легковых автомобилей  -  42 руб.\n\nДиагностика Микроавтобусов  -  58.80 руб.\n\nДиагностика Грузовых автомобилей  -  84 руб.\n\nОбнуление ошибок с блока управления (ГАЗ, МАЗ, КАМАЗ и др.)  -  50.40 руб.\n\nКалибровка топливной рейки МАЗ Евро-3  -  84 руб.\n\nПрошивка блока управления Минского Моторного Завода (стоит BOSCH)  -  от 420 руб.\n\nДИАГНОСТИКА ГРУЗОВЫХ АВТОМОБИЛЕЙ С ВЫЕЗДОМ К ЗАКАЗЧИКУ\n\nМинск  -  184.80 руб.\n\nМинская область  -  285.60 руб.\n\nВитебская, Могилевская, Гомельская, Брестская, Гродненская область  -  504 руб.\n\nДополнительно: Снятие/установка топливной аппаратуры — по согласованию.Диагностика легковых и грузовых автомобилей\n\n-------------------------------------------------------------------------------------------\nBOSCH KTS-570 — официальная программа с постоянными обновлениями\n\nJaltest Soft — официальная Испанская Мультибрендовая диагностика грузовых автомобилей\n\nДК 5 — предназначен для проведения диагностики электронных систем управления дизельных двигателей отечественного производства.\n\nЦены на все услуги и возможность оставить заявку: ",
+        "to_print": "Диагностика Легковых автомобилей  -  42 руб.\n\nДиагностика Микроавтобусов  -  58.80 руб.\n\nДиагностика Грузовых автомобилей  -  84 руб.\n\nОбнуление ошибок с блока управления (ГАЗ, МАЗ, КАМАЗ и др.)  -  50.40 руб.\n\nКалибровка топливной рейки МАЗ Евро-3  -  84 руб.\n\nПрошивка блока управления Минского Моторного Завода (стоит BOSCH)  -  от 420 руб.\n\nДИАГНОСТИКА ГРУЗОВЫХ АВТОМОБИЛЕЙ С ВЫЕЗДОМ К ЗАКАЗЧИКУ\n-------------------------------------------------------------------------------------------\n\nМинск  -  184.80 руб.\n\nМинская область  -  285.60 руб.\n\nВитебская, Могилевская, Гомельская, Брестская, Гродненская область  -  504 руб.\n\nДополнительно: Снятие/установка топливной аппаратуры — по согласованию.Диагностика легковых и грузовых автомобилей\n\n-------------------------------------------------------------------------------------------\nBOSCH KTS-570 — официальная программа с постоянными обновлениями\n\nJaltest Soft — официальная Испанская Мультибрендовая диагностика грузовых автомобилей\n\nДК 5 — предназначен для проведения диагностики электронных систем управления дизельных двигателей отечественного производства.\n\nЦены на все услуги и возможность оставить заявку: ",
         "next_keyboard": "Service_Services",
         "link": "https://tsauto.by/uslugi-servisa/diagnostika/"
       },
@@ -206,8 +216,8 @@
         "link": "https://tsauto.by/uslugi-servisa/zapravka-kondicionera/"
       },
       {
-        "id": "25",
-        "name": "Домой",
+        "id": "17",
+        "name": "Назад",
         "position": "8",
         "to_print": "ООО «Топливный сервис авто»\n\n",
         "photo": "https://avatars.mds.yandex.net/get-altay/2752367/2a000001719c1fa9a14d22828ab54486364c/XXXL",
@@ -236,8 +246,8 @@
         "link": "https://tsauto.by/novosti-i-akcii/"
       },
       {
-        "id": "28",
-        "name": "Домой",
+        "id": "17",
+        "name": "Назад",
         "position": "8",
         "to_print": "ООО «Топливный сервис авто»\n\n",
         "photo": "https://avatars.mds.yandex.net/get-altay/2752367/2a000001719c1fa9a14d22828ab54486364c/XXXL",
@@ -253,7 +263,7 @@
         "id": "29",
         "name": "Контакты",
         "position": "0",
-        "to_print": "Контакты:\nООО «Топливный сервис авто»\n\n220024, Республика Беларусь\nг. Минск, ул. Бабушкина, 19 вставка цеха в Главном производственном корпусе в осях 13-19, А.Г., Кабинет №3\n\n+375 17 271-87-54 тел./факс\n+375 29 190-75-00 моб.\n\nСсылки:\nboschminsk@mail.ru\ntsautoby@gmail.com",
+        "to_print": "Контакты:\nООО «Топливный сервис авто»\n\n220024, Республика Беларусь\nг. Минск, ул. Бабушкина, 19 вставка цеха в Главном производственном корпусе в осях 13-19, А.Г., Кабинет №3\n\n+375 17 271-87-54 тел./факс\n+375 29 190-75-00 моб.\n\nПочта:\nboschminsk@mail.ru\ntsautoby@gmail.com\n\nInstagram:\nhttps://www.instagram.com/tsautoby/\n\nМагазин запчастей:\nhttps://tsaparts.by/",
         "next_keyboard": "Requisites",
         "link": ""
       },
@@ -282,8 +292,8 @@
         "link": "https://tsauto.by/o-nas/"
       },
       {
-        "id": "33",
-        "name": "Домой",
+        "id": "17",
+        "name": "Назад",
         "position": "8",
         "to_print": "ООО «Топливный сервис авто»\n\n",
         "photo": "https://avatars.mds.yandex.net/get-altay/2752367/2a000001719c1fa9a14d22828ab54486364c/XXXL",
@@ -304,12 +314,396 @@
         "link": "https://tsauto.by/"
       },
       {
-        "id": "33",
-        "name": "Домой",
+        "id": "17",
+        "name": "Назад",
         "position": "8",
         "to_print": "ООО «Топливный сервис авто»\n\n",
         "photo": "https://avatars.mds.yandex.net/get-altay/2752367/2a000001719c1fa9a14d22828ab54486364c/XXXL",
         "next_keyboard": "main",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "keyboard_name": "Bosch_prise",
+    "buttons": [
+      {
+        "id": "36",
+        "name": "Форсунок мех. Комплект",
+        "position": "0",
+        "to_print": "Проверка: Форсунок мех. Комплект",
+        "photo": "https://tsauto.by/wp-content/uploads/2020/02/3-3.jpg",
+        "next_keyboard": "Bosch_prise",
+        "link": ""
+      },
+      {
+        "id": "37",
+        "name": "ТНВД Рядные BOSCH",
+        "position": "1",
+        "to_print": "Проверка: ТНВД Рядные BOSCH",
+        "photo": "https://tsauto.by/wp-content/uploads/2020/02/8.jpg",
+        "next_keyboard": "Bosch_prise",
+        "link": ""
+      },
+      {
+        "id": "38",
+        "name": "Форсунок COMMON RAIL",
+        "position": "2",
+        "to_print": "Проверка: Форсунок COMMON RAIL",
+        "photo": "https://images.deal.by/10434989_forsunki-common-rail.jpg",
+        "next_keyboard": "Bosch_prise",
+        "link": ""
+      },
+    {
+        "id": "39",
+        "name": "COMMON RAIL PIEZO",
+        "position": "3",
+        "to_print": "Проверка: COMMON RAIL PIEZO",
+        "photo": "https://www.bosch-mobility-solutions.com/media/global/products-and-services/passenger-cars-and-light-commercial-vehicles/powertrain-solutions/diesel-common-rail-system-piezo/piezo-injector/piezo-injector-thumbnail.jpg",
+        "next_keyboard": "Bosch_prise",
+        "link": ""
+      },
+    {
+        "id": "40",
+        "name": "ТНВД COMMON RAI CP1-4",
+        "position": "4",
+        "to_print": "Проверка: ТНВД COMMON RAI CP1 CP2 CP3 CP4",
+        "photo": "https://tsauto.by/wp-content/uploads/2020/02/common-rail-pump.jpg",
+        "next_keyboard": "Bosch_prise",
+        "link": ""
+      },
+    {
+        "id": "41",
+        "name": "ТНВД VE, VR BOSCH, ZEXEL",
+        "position": "5",
+        "to_print": "Проверка: ТНВД VE, VR BOSCH, ZEXEL",
+        "photo": "https://tsauto.by/wp-content/uploads/2020/02/ve.jpg",
+        "next_keyboard": "Bosch_prise",
+        "link": ""
+      },
+    {
+        "id": "42",
+        "name": "Насос-Форсунок",
+        "position": "6",
+        "to_print": "Проверка: Насос-Форсунок",
+        "photo": "https://a.allegroimg.com/s650/115a0e/4d448960424cad821709f42a895c/VW-golf-5-1-9TDI-BLS-pompowtryski",
+        "next_keyboard": "Bosch_prise",
+        "link": ""
+      },
+    {
+        "id": "43",
+        "name": "Грузовых Насос-Форсунок SCANIA, VOLVO, IVECO и др.",
+        "position": "7",
+        "to_print": "Проверка: Грузовых Насос-Форсунок SCANIA, VOLVO, IVECO и др.",
+        "photo": "https://tsauto.by/wp-content/uploads/2020/02/gruzovie.jpg",
+        "next_keyboard": "Bosch_prise",
+        "link": ""
+      },
+    {
+        "id": "44",
+        "name": "Насосных-Секций MERCEDES, RENAULT, DAF И ДР.",
+        "position": "8",
+        "to_print": "Проверка: Насосных-Секций MERCEDES, RENAULT, DAF И ДР.",
+        "photo": "https://agro-ukraine.com/imgs/board/29/864229-1.jpg",
+        "next_keyboard": "Bosch_prise",
+        "link": ""
+      },
+      {
+        "id": "45",
+        "name": "Сайт",
+        "position": "9",
+        "to_print": "",
+        "next_keyboard": "",
+        "link": "https://tsauto.by/uslugi-toplivnogo-uchastka/bosch/"
+      },
+      {
+        "id": "46",
+        "name": "Назад",
+        "position": "10",
+        "to_print": "Услуги сервиса",
+        "next_keyboard": "Fuel_section_services",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "keyboard_name": "Denso_prise",
+    "buttons": [
+      {
+        "id": "47",
+        "name": "Форсунки DENSO",
+        "position": "0",
+        "to_print": "Проверка: Форсунок DENSO",
+        "photo": "https://images.deal.by/51719054_w600_h600_51719054.jpg",
+        "next_keyboard": "Denso_prise",
+        "link": ""
+      },
+      {
+        "id": "48",
+        "name": "ТНВД DENSO VE,VR",
+        "position": "1",
+        "to_print": "Проверка и Ремонт ТНВД DENSO VE,VR",
+        "photo": "https://tsauto.by/wp-content/uploads/2020/10/denso_ve.jpg",
+        "next_keyboard": "Denso_prise",
+        "link": ""
+      },
+      {
+        "id": "49",
+        "name": "DENSO Рядный",
+        "position": "2",
+        "to_print": "Проверка и Ремонт DENSO Рядный",
+        "photo": "https://images.deal.by/10434989_forsunki-common-rail.jpg",
+        "next_keyboard": "Denso_prise",
+        "link": ""
+      },
+      {
+        "id": "50",
+        "name": "Сайт",
+        "position": "3",
+        "to_print": "",
+        "next_keyboard": "",
+        "link": "https://tsauto.by/uslugi-toplivnogo-uchastka/denso/"
+      },
+      {
+        "id": "51",
+        "name": "Назад",
+        "position": "4",
+        "to_print": "Услуги сервиса",
+        "next_keyboard": "Fuel_section_services",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "keyboard_name": "Delphi_prise",
+    "buttons": [
+      {
+        "id": "52",
+        "name": "Форсунки Delphi",
+        "position": "0",
+        "to_print": "Проверка: Delphi",
+        "photo": "https://images.deal.by/51719054_w600_h600_51719054.jpg",
+        "next_keyboard": "Delphi_prise",
+        "link": ""
+      },
+      {
+        "id": "53",
+        "name": "Сайт",
+        "position": "1",
+        "to_print": "",
+        "next_keyboard": "",
+        "link": "https://tsauto.by/uslugi-toplivnogo-uchastka/delphi/"
+      },
+      {
+        "id": "54",
+        "name": "Назад",
+        "position": "2",
+        "to_print": "Услуги сервиса",
+        "next_keyboard": "Fuel_section_services",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "keyboard_name": "Siemens_prise",
+    "buttons": [
+      {
+        "id": "55",
+        "name": "Форсунки Siemens",
+        "position": "0",
+        "to_print": "Проверка: Форсунок Siemens",
+        "photo": "https://a.d-cd.net/fZrP1C3_-B5PBdIHqV_K3SFybhE-960.jpg",
+        "next_keyboard": "Siemens_prise",
+        "link": ""
+      },
+      {
+        "id": "56",
+        "name": "Сайт",
+        "position": "1",
+        "to_print": "",
+        "next_keyboard": "",
+        "link": "https://tsauto.by/uslugi-toplivnogo-uchastka/siemens/"
+      },
+      {
+        "id": "57",
+        "name": "Назад",
+        "position": "2",
+        "to_print": "Услуги сервиса",
+        "next_keyboard": "Fuel_section_services",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "keyboard_name": "Scania_prise",
+    "buttons": [
+      {
+        "id": "58",
+        "name": "Форсунки Siemens",
+        "position": "0",
+        "to_print": "Диагностика Грузового Автомобиля SCANIA",
+        "photo": "https://tsauto.by/wp-content/uploads/2020/02/scania.jpg",
+        "next_keyboard": "Scania_prise",
+        "link": ""
+      },
+      {
+        "id": "59",
+        "name": "Сайт",
+        "position": "1",
+        "to_print": "",
+        "next_keyboard": "",
+        "link": "https://tsauto.by/uslugi-toplivnogo-uchastka/scania-hpi/"
+      },
+      {
+        "id": "60",
+        "name": "Назад",
+        "position": "2",
+        "to_print": "Услуги сервиса",
+        "next_keyboard": "Fuel_section_services",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "keyboard_name": "Zexel_prise",
+    "buttons": [
+      {
+        "id": "61",
+        "name": "ZEXEL VE ,VR",
+        "position": "0",
+        "to_print": "Проверка и Ремонт ZEXEL VE ,VR",
+        "photo": "https://tsauto.by/wp-content/uploads/2020/10/ve_web-1.jpg",
+        "next_keyboard": "Zexel_prise",
+        "link": ""
+      },
+      {
+        "id": "62",
+        "name": "ZEXEL РЯДНЫЙ",
+        "position": "0",
+        "to_print": "Проверка и Ремонт ZEXEL РЯДНЫЙ",
+        "photo": "https://tsauto.by/wp-content/uploads/2020/10/zexel_inline.jpg",
+        "next_keyboard": "Zexel_prise",
+        "link": ""
+      },
+      {
+        "id": "63",
+        "name": "Сайт",
+        "position": "1",
+        "to_print": "",
+        "next_keyboard": "",
+        "link": "https://tsauto.by/uslugi-toplivnogo-uchastka/zexel/"
+      },
+      {
+        "id": "64",
+        "name": "Назад",
+        "position": "2",
+        "to_print": "Услуги сервиса",
+        "next_keyboard": "Fuel_section_services",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "keyboard_name": "АЗПИ_prise",
+    "buttons": [
+      {
+        "id": "65",
+        "name": "Форсунки АЗПИ",
+        "position": "0",
+        "to_print": "Проверка COMMON RAIL АЗПИ\n(Двигатель ЯМЗ — 6565, 6585)",
+        "photo": "https://tsauto.by/wp-content/uploads/2020/03/2-8.jpg",
+        "next_keyboard": "Siemens_prise",
+        "link": ""
+      },
+      {
+        "id": "66",
+        "name": "Сайт",
+        "position": "1",
+        "to_print": "",
+        "next_keyboard": "",
+        "link": "https://tsauto.by/uslugi-toplivnogo-uchastka/azpi/"
+      },
+      {
+        "id": "67",
+        "name": "Назад",
+        "position": "2",
+        "to_print": "Услуги сервиса",
+        "next_keyboard": "Fuel_section_services",
+        "link": ""
+      }
+    ]
+  },
+  {
+    "keyboard_name": "ЯМХ_КАМАЗ_MOTORPAL_prise",
+    "buttons": [
+      {
+        "id": "68",
+        "name": "Форсунки ЯМЗ, КАМАЗ, АЗПИ, МАЗ, MOTORPAL",
+        "position": "0",
+        "to_print": "Проверка Форсунок ЯМЗ, КАМАЗ, АЗПИ, МАЗ, MOTORPAL И ДР.",
+        "photo": "https://tsauto.by/wp-content/uploads/2020/02/jamz.jpg",
+        "next_keyboard": "ЯМХ_КАМАЗ_MOTORPAL_prise",
+        "link": ""
+      },
+      {
+        "id": "69",
+        "name": "ТНВД ЕВРО-2",
+        "position": "1",
+        "to_print": "Проверка ТНВД ЕВРО-2",
+        "photo": "https://tsauto.by/wp-content/uploads/2020/03/euro2-1.jpg",
+        "next_keyboard": "ЯМХ_КАМАЗ_MOTORPAL_prise",
+        "link": ""
+      },
+      {
+        "id": "70",
+        "name": "ТНВД ЕВРО-3",
+        "position": "2",
+        "to_print": "Проверка ТНВД ЕВРО-3",
+        "photo": "https://tsauto.by/wp-content/uploads/2020/03/euro3.jpg",
+        "next_keyboard": "ЯМХ_КАМАЗ_MOTORPAL_prise",
+        "link": ""
+      },
+      {
+        "id": "71",
+        "name": "ТНВД КАМАЗ",
+        "position": "3",
+        "to_print": "Проверка ТНВД КАМАЗ",
+        "photo": "https://b2b.rumotors.com/images/is/9/99D7E36960087B5E36B8FB1AB1141125/3116FA218DC2D82892A3008C19978E10.jpg",
+        "next_keyboard": "ЯМХ_КАМАЗ_MOTORPAL_prise",
+        "link": ""
+      },
+      {
+        "id": "72",
+        "name": "ТНВД MOTORPAL",
+        "position": "4",
+        "to_print": "Проверка ТНВД MOTORPAL",
+        "photo": "https://tsauto.by/wp-content/uploads/2020/03/motorpal.jpg",
+        "next_keyboard": "ЯМХ_КАМАЗ_MOTORPAL_prise",
+        "link": ""
+      },
+      {
+        "id": "73",
+        "name": "ТНВД ЯЗДА 4-КА",
+        "position": "5",
+        "to_print": "Проверка ТНВД ЯЗДА 4-КА",
+        "photo": "https://tsauto.by/wp-content/uploads/2020/03/yazda.jpg",
+        "next_keyboard": "ЯМХ_КАМАЗ_MOTORPAL_prise",
+        "link": ""
+      },
+      {
+        "id": "74",
+        "name": "Сайт",
+        "position": "6",
+        "to_print": "",
+        "next_keyboard": "",
+        "link": "https://tsauto.by/uslugi-toplivnogo-uchastka/jamz-azpi-kamaz-motorpal/"
+      },
+      {
+        "id": "75",
+        "name": "Назад",
+        "position": "7",
+        "to_print": "Услуги сервиса",
+        "next_keyboard": "Fuel_section_services",
         "link": ""
       }
     ]

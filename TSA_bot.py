@@ -5,10 +5,9 @@ import json
 import os
 
 # https://t.me/kafe_demo_test_super_bot
-bot = telebot.TeleBot(token=os.getenv('TOKEN'))
+bot = telebot.TeleBot('5484593859:AAHu8GsdsvogFXw7-b6GaQOqIr-hy_uGqug')
 # Ниже напиши свой ID группу в телеграмме
 GROUP_ID = 428955934
-
 
 def get_all_buttons():
     with open('content.json', encoding='utf-8') as config:
@@ -30,7 +29,7 @@ def get_keyboard(keyboard_type):
     for chunk in chunked:
         chunked_btn = []
         for button in list(filter(lambda el: el is not None, chunk)):
-            if button['name'] == 'Сайт':
+            if 'Сайт' in button['name']:
                 chunked_btn.append(
                     types.InlineKeyboardButton(button['name'],
                                                callback_data=button['id'], url=button['link'])
@@ -79,7 +78,10 @@ def direct_message(msg):
 def keyboard_answer(call):
     button = list(filter(lambda btn: call.data == btn['id'], get_all_buttons()))[0]
     keyboard = types.InlineKeyboardMarkup()
-    but = types.InlineKeyboardButton('Сайт', callback_data=button['id'], url=button['link'])
+    if 'link_name' in button:
+        but = types.InlineKeyboardButton(button['link_name'], callback_data=button['id'], url=button['link'])
+    else:
+        but = types.InlineKeyboardButton('Сайт', callback_data=button['id'], url=button['link'])
     keyboard.add(but)
     if button['link'] != "":
         if 'photo' in button:
@@ -125,8 +127,6 @@ def keyboard_answer(call):
                 reply_markup=get_keyboard(button['next_keyboard']),
                 parse_mode='html'
             )
-
-
 
 
 if __name__ == '__main__':
