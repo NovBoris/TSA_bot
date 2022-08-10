@@ -5,9 +5,10 @@ import json
 import os
 
 # https://t.me/kafe_demo_test_super_bot
-bot = telebot.TeleBot('5484593859:AAHu8GsdsvogFXw7-b6GaQOqIr-hy_uGqug')
+bot = telebot.TeleBot('5460762801:AAF3s7OaQppOF9GjfmNW2Y4IzjIq3MVGIa4')
 # Ниже напиши свой ID группу в телеграмме
 GROUP_ID = 428955934
+
 
 def get_all_buttons():
     with open('content.json', encoding='utf-8') as config:
@@ -52,6 +53,34 @@ def generate_message(button):
     return msg
 
 
+def generate_button_with_photo(button, call, keyboard):
+    bot.send_photo(
+        chat_id=call.message.chat.id,
+        photo=button['photo'],
+        caption=generate_message(button),
+        reply_markup=keyboard,
+        parse_mode='html'
+    )
+
+
+def generate_button_with_link(button, call):
+    bot.send_message(
+        chat_id=call.message.chat.id,
+        text='Дальше',
+        reply_markup=get_keyboard(button['next_keyboard']),
+        parse_mode='html'
+    )
+
+
+def generate_button(button, call, keyboard):
+    bot.send_message(
+        chat_id=call.message.chat.id,
+        text=generate_message(button),
+        reply_markup=keyboard,
+        parse_mode='html'
+    )
+
+
 @bot.message_handler(commands=['start'])
 def start(message):
     bot.send_photo(message.chat.id,
@@ -85,48 +114,16 @@ def keyboard_answer(call):
     keyboard.add(but)
     if button['link'] != "":
         if 'photo' in button:
-            bot.send_photo(
-                chat_id=call.message.chat.id,
-                photo=button['photo'],
-                caption=generate_message(button),
-                reply_markup=keyboard,
-                parse_mode='html'
-            )
-            bot.send_message(
-                chat_id=call.message.chat.id,
-                text='Дальше',
-                reply_markup=get_keyboard(button['next_keyboard']),
-                parse_mode='html'
-            )
+            generate_button_with_photo(button, call, keyboard)
+            generate_button_with_link(button, call)
         else:
-            bot.send_message(
-                chat_id=call.message.chat.id,
-                text=generate_message(button),
-                reply_markup=keyboard,
-                parse_mode='html'
-            )
-            bot.send_message(
-                chat_id=call.message.chat.id,
-                text='Дальше',
-                reply_markup=get_keyboard(button['next_keyboard']),
-                parse_mode='html'
-            )
+            generate_button(button, call, keyboard)
+            generate_button_with_link(button, call)
     elif button['link'] == "":
         if 'photo' in button:
-            bot.send_photo(
-                chat_id=call.message.chat.id,
-                photo=button['photo'],
-                caption=generate_message(button),
-                reply_markup=get_keyboard(button['next_keyboard']),
-                parse_mode='html'
-            )
+            generate_button_with_photo(button, call, get_keyboard(button['next_keyboard']))
         else:
-            bot.send_message(
-                chat_id=call.message.chat.id,
-                text=generate_message(button),
-                reply_markup=get_keyboard(button['next_keyboard']),
-                parse_mode='html'
-            )
+            generate_button(button, call, get_keyboard(button['next_keyboard']))
 
 
 if __name__ == '__main__':
