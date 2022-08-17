@@ -53,32 +53,22 @@ def generate_message(button):
     return msg
 
 
-def generate_button_with_photo(button, call, keyboard):
-    bot.send_photo(
-        chat_id=call.message.chat.id,
-        photo=button['photo'],
-        caption=generate_message(button),
-        reply_markup=keyboard,
-        parse_mode='html'
-    )
-
-
-def generate_button_with_link(button, call):
-    bot.send_message(
-        chat_id=call.message.chat.id,
-        text='Дальше',
-        reply_markup=get_keyboard(button['next_keyboard']),
-        parse_mode='html'
-    )
-
-
-def generate_button(button, call, keyboard):
-    bot.send_message(
-        chat_id=call.message.chat.id,
-        text=generate_message(button),
-        reply_markup=keyboard,
-        parse_mode='html'
-    )
+def generate_button(call, keyboard, photo=False, text='Дальше'):
+    if photo:
+        bot.send_photo(
+            chat_id=call.message.chat.id,
+            photo=photo,
+            caption=text,
+            reply_markup=keyboard,
+            parse_mode='html'
+        )
+    else:
+        bot.send_message(
+            chat_id=call.message.chat.id,
+            text=text,
+            reply_markup=keyboard,
+            parse_mode='html'
+        )
 
 
 @bot.message_handler(commands=['start'])
@@ -114,16 +104,16 @@ def keyboard_answer(call):
     keyboard.add(but)
     if button['link'] != "":
         if 'photo' in button:
-            generate_button_with_photo(button, call, keyboard)
-            generate_button_with_link(button, call)
+            generate_button(call, keyboard, photo=button['photo'], text=generate_message(button))
+            generate_button(call, get_keyboard(button['next_keyboard']))
         else:
-            generate_button(button, call, keyboard)
-            generate_button_with_link(button, call)
+            generate_button(call, keyboard, text=generate_message(button))
+            generate_button(call, get_keyboard(button['next_keyboard']))
     elif button['link'] == "":
         if 'photo' in button:
-            generate_button_with_photo(button, call, get_keyboard(button['next_keyboard']))
+            generate_button(call, get_keyboard(button['next_keyboard']), photo=button['photo'], text=generate_message(button))
         else:
-            generate_button(button, call, get_keyboard(button['next_keyboard']))
+            generate_button(call, get_keyboard(button['next_keyboard']), text=generate_message(button))
 
 
 if __name__ == '__main__':
